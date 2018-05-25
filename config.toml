@@ -1,0 +1,66 @@
+baseURL = "http://codegatha.in"
+languageCode = "en-us"
+title = "Codegatha"
+theme = "blackburn"
+author = "codewithsaswat"
+copyright = "&copy; 2018. All rights reserved."
+canonifyurls = true
+paginate = 10
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
+  
+[params]
+  # Shown in the home page
+  subtitle = "A place for coders"
+  brand = "Codegatha"
+  googleAnalytics = "UA-112790413-1"
+  disqus = "srimansaswat"
+  # CSS name for highlight.js
+  highlightjs = "androidstudio"
+  dateFormat = "02 Jan 2006"
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Posts"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 2
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name="Topics"
+	pre="<i class='fa fa-folder fa-fw'></i>"
+	weight = 3
+	identifier = "topics"
+	url = "/topics/"	
+  [[menu.main]]
+    name="Tags"
+	pre="<i class='fa fa-tags fa-fw'></i>"
+	weight = 4
+	identifier = "tags"
+	url = "/tags/"	
+  [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 5
+    identifier = "about"
+    url = "/about/"
+  [[menu.main]]
+    name = "Contact"
+    pre = "<i class='fa fa-phone fa-fw'></i>"
+    weight = 6
+    url = "/contact/"
+	
+[social]
+
+# Techie
+github = "srimans"
+stackoverflow = "4008626"

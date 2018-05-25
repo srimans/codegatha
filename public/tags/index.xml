@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Codegatha</title>
+    <link>http://codegatha.in/tags/</link>
+    <description>Recent content in Tags on Codegatha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 27 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codegatha.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Amazon S3</title>
+      <link>http://codegatha.in/tags/amazon-s3/</link>
+      <pubDate>Sat, 27 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/amazon-s3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asp.net</title>
+      <link>http://codegatha.in/tags/asp.net/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/asp.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C Sharp</title>
+      <link>http://codegatha.in/tags/c-sharp/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/c-sharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud Storage</title>
+      <link>http://codegatha.in/tags/cloud-storage/</link>
+      <pubDate>Sat, 27 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/cloud-storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Entity Framework</title>
+      <link>http://codegatha.in/tags/entity-framework/</link>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/entity-framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hosting</title>
+      <link>http://codegatha.in/tags/hosting/</link>
+      <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/hosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iis</title>
+      <link>http://codegatha.in/tags/iis/</link>
+      <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/iis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linq</title>
+      <link>http://codegatha.in/tags/linq/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/linq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mini Profiler</title>
+      <link>http://codegatha.in/tags/mini-profiler/</link>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/mini-profiler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mvc</title>
+      <link>http://codegatha.in/tags/mvc/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/mvc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Payment Gateway</title>
+      <link>http://codegatha.in/tags/payment-gateway/</link>
+      <pubDate>Sat, 26 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/payment-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Push Notification</title>
+      <link>http://codegatha.in/tags/push-notification/</link>
+      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/push-notification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pushsharp</title>
+      <link>http://codegatha.in/tags/pushsharp/</link>
+      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/pushsharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sql Server</title>
+      <link>http://codegatha.in/tags/sql-server/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/sql-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Story</title>
+      <link>http://codegatha.in/tags/story/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/story/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips</title>
+      <link>http://codegatha.in/tags/tips/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

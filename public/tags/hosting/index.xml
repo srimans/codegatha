@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hosting on Codegatha</title>
+    <link>http://codegatha.in/tags/hosting/</link>
+    <description>Recent content in Hosting on Codegatha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 02 Feb 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codegatha.in/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to create logging and connect locally hosted website to database?</title>
+      <link>http://codegatha.in/post/how-to-create-logging-and-connect-locally-hosted-website-to-to-database/</link>
+      <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-create-logging-and-connect-locally-hosted-website-to-to-database/</guid>
+      <description>This post is a continuation of my previous post.Here we will see how we can create a login and connect your web application to the database.
+In real life scenarios when we are hosting the website on the IIS and we also have the application pointing to a database then we need to have proper logging and proper permissions set up.If not then we will get a yellow screen saying&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>How to host a website on local IIS?</title>
+      <link>http://codegatha.in/post/how-to-host-a-website-locally-on-iis/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-host-a-website-locally-on-iis/</guid>
+      <description>Prerequisites You already have installed IIS on your system.If IIS is not installed then go to
+Control Panel -&amp;gt; Programs and features -&amp;gt; Turn on windows features on or off Steps  Add a new MVC Web application.Here I have added it to the path E:\    Open the IIS by pressing Windows+R and then type inetmgr. Right click on folder Sites and click Add Website   Enter the site name as you want and the host name as per your requirement.</description>
+    </item>
+    
+  </channel>
+</rss>

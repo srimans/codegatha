@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.39" />
+
+  <title>How to use Helper Methods in .NET MVC? &middot; Codegatha</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://codegatha.in/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://codegatha.in/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://codegatha.in/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://codegatha.in/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://codegatha.in/">Codegatha</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/topics/"><i class='fa fa-folder fa-fw'></i>Topics</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/srimans" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/4008626" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>How to use Helper Methods in .NET MVC?</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>02 Apr 2018</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://codegatha.in/tags/asp.net">ASP.NET</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://codegatha.in/tags/mvc">MVC</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://codegatha.in/tags/c-sharp">c sharp</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Helper Methods are nothing but simply extension methods. If you are wondering what actually an extension method is then check <a href="http://codegatha.in/post/how-to-use-extension-methods-in-c-sharp" target="_blank">this</a>. This post will talk about different types of helpers -:</p>
+
+<ul>
+<li>HtmlHelpers</li>
+<li>UrlHelpers</li>
+</ul>
+
+<p>Implementing both of them is same like implementing extension methods. Before implementing them it is important to know why we will implement them. Things can also work without them also.</p>
+
+<h2 id="why-implement-helper-methods">Why Implement Helper Methods?</h2>
+
+<p>The main reason why we want to use helper methods is code reusability.</p>
+
+<p>If you are new to razor or you have used razor then you must have used</p>
+
+<ul>
+<li>@Html.Textbox(….)</li>
+<li>@Html.Label(…)</li>
+<li>@Html.Partial(…)</li>
+<li>@Url.Action(…)</li>
+<li>@Url.Content(…)</li>
+</ul>
+
+<p>These are nothing but in built helper methods.You can use them as soon as you create a view. If you have a piece of html that you want to use in many places, then go ahead and create a helper method. The main advantage of keeping them is any change done to that piece of code will be done in one place only.</p>
+
+<h2 id="how-to-implement-helper-methods">How to Implement Helper Methods?</h2>
+
+<p>I will create one simple custom helper method. Custom means it will be my own method. I will not use any of the in built .Net helper methods. I will give examples each for <b>HtmlHelper</b> and <b>UrlHelper</b>.</p>
+
+<h3 id="htmlhelper">HtmlHelper</h3>
+
+<p>For HtmlHelper there is a simple horizontal box that needs to be rendered in many views. For that we will use HtmlHelper.</p>
+
+<ul>
+<li>Create a class called HtmlExtensions</li>
+<li>Create a Method called HorizontalBox</li>
+</ul>
+
+<script src="https://gist.github.com/srimans/5943bd88f5e14b8a5563459fa950336d.js"></script>
+
+<ul>
+<li>Create a partial view called HorizontalBox.cshtml</li>
+<li>In the view add @Html.HorizontalBox()</li>
+</ul>
+
+<p>Lets say tomorrow we need to change the name of HorizontalBox to something else,we have to do it in one place only. Lot of time is saved. Hence life of a developer is easy.</p>
+
+<h3 id="urlhelper">UrlHelper</h3>
+
+<p>For UrlHelper we have a ContentService built that uploads our documents somewhere into cloud and gets url of the uploaded file. To know more about how to build a service and upload files,check <a href="http://codegatha.in/post/how-to-upload-file-to-amazon-s3-bucket-using-csharp-code/" target="_blank">this</a>.</p>
+
+<ul>
+<li>Create a class called UrlExtension</li>
+<li>Add a method Logo.</li>
+</ul>
+
+<script src="https://gist.github.com/srimans/6efae97f6f37cc2f9fd229c3aa3063ab.js"></script>
+
+<ul>
+<li>In the view add @Url.Logo(some-id-or-filename)
+<b>ContentType</b> can be an enum of different types of files you are saving. One may be a PAN card, one may be a Voter Id etc..</li>
+</ul>
+
+<p>You do not need to hardcode the path in many views. Updating the things becomes difficult and code maintainability becomes a headache. So taking help of helper methods is an easy option to have.</p>
+
+<h2 id="important">IMPORTANT!!!</h2>
+
+<p>When you do @Html. Or a @Url. you still cannot find them in the view. So we are missing some reference here. Go to View/Web.Config and under add the following</p>
+
+<pre><code>&lt;add namespace=&quot;HelperMethods.Web.Extensions&quot;/&gt;
+</code></pre>
+
+<p><b>Namespace value must be replaced with your namespace in which the helper class resides.</b></p>
+
+<p>Without this things won’t work.</p>
+
+<p>As you saw things are very easy to implement. Under the hood @Html.TextBox or any inbuilt .Net Html helper or UrlHelper works the same way.These are extension methods extending from <b>UrlHelper</b> class or a <b>HtmlHelper</b> class.</p>
+
+<p>You can find the full source code <a href="https://github.com/srimans/BlogExamples" target="_blank">here</a>. Keep following me for more updates.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://codegatha.in/post/how-to-use-extension-methods-in-c-sharp/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://codegatha.in/post/how-to-use-extension-methods-in-c-sharp/">Extension Methods</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://codegatha.in/post/using-linq-in-c-sharp/">LINQ</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://codegatha.in/post/using-linq-in-c-sharp/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = url;
+this.page.identifier = url;
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://codegatha.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://codegatha.in/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-112790413-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

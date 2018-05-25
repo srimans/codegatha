@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Payment Gateway on Codegatha</title>
+    <link>http://codegatha.in/tags/payment-gateway/</link>
+    <description>Recent content in Payment Gateway on Codegatha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 26 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codegatha.in/tags/payment-gateway/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to integrate CcAvenue payment gateway in ASP.NET MVC ?</title>
+      <link>http://codegatha.in/post/how-to-integrate-ccavenue-payment-gateway-in-asp-net-mvc/</link>
+      <pubDate>Sat, 26 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-integrate-ccavenue-payment-gateway-in-asp-net-mvc/</guid>
+      <description>Prerequisites You should have a ccavenue account.
+Problem  The second step is the problem I faced while integrating the ccavenue page.I found out that most of the people were finding the same.As we are developing something we need to first test it in development environment.  Inside your ccavenue account they have already given you the access code,merchant Id and access key for a url.But those credentials will only work if you are redirecting to the ccavenue page from that url only.</description>
+    </item>
+    
+  </channel>
+</rss>

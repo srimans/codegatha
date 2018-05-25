@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Entity Framework on Codegatha</title>
+    <link>http://codegatha.in/tags/entity-framework/</link>
+    <description>Recent content in Entity Framework on Codegatha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 03 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codegatha.in/tags/entity-framework/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Set up Miniprofiler with ASP .Net MVC EntityFramework 6 CodeFirst??</title>
+      <link>http://codegatha.in/post/how-to-set-up-miniprofiler-with-asp-net-mvc-entityframework-6-code-first/</link>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-set-up-miniprofiler-with-asp-net-mvc-entityframework-6-code-first/</guid>
+      <description>What is a Profiler? Profiling helps in gathering information about an executing application, i.e how much time is spend where which in turn helps allowing to determine those improvements that are required in the application. Anything that helps us do profiling is called as a profiler.
+Read more about why profilers and good .NET profilers.
+One of them is Miniprofiler
+MiniProfiler Miniprofiler is developed by the famous team at StackOverflow.</description>
+    </item>
+    
+  </channel>
+</rss>

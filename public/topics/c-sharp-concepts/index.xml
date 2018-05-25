@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C Sharp Concepts on Codegatha</title>
+    <link>http://codegatha.in/topics/c-sharp-concepts/</link>
+    <description>Recent content in C Sharp Concepts on Codegatha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codegatha.in/topics/c-sharp-concepts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LINQ</title>
+      <link>http://codegatha.in/post/using-linq-in-c-sharp/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/using-linq-in-c-sharp/</guid>
+      <description>Introduction LINQ stands for Language Integrated Query. LINQ helps us in querying objects. Introduction of LINQ is a great advantage for developers because as a developer if you have ORM(Object Relation Mapping) framework like Entity Framework then you do not need to write SQL queries. Linq can help you query your business objects as well.
+LINQ helps to query
+ Objects in memory (Collections) Databases (Entities) XML ADO .NET (DataSets)  Why Linq?</description>
+    </item>
+    
+    <item>
+      <title>Extension Methods</title>
+      <link>http://codegatha.in/post/how-to-use-extension-methods-in-c-sharp/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-use-extension-methods-in-c-sharp/</guid>
+      <description>Introduction This post is about how we can take the advantage of Extension methods that is available in C#. This post will cover everything about C# extension methods. This is one of the posts under knowing C# better. In this post I will explain how we can create extension methods and how extension methods are used in real life situations.
+Imagine there is a class file and some methods in the file which does some task.</description>
+    </item>
+    
+  </channel>
+</rss>

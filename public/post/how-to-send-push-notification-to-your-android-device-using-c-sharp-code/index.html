@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.39" />
+
+  <title>How to send push notification to your android device using C# code? &middot; Codegatha</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://codegatha.in/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://codegatha.in/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://codegatha.in/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://codegatha.in/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://codegatha.in/">Codegatha</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/topics/"><i class='fa fa-folder fa-fw'></i>Topics</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/srimans" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/4008626" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>How to send push notification to your android device using C# code?</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>15 Nov 2016</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://codegatha.in/tags/push-notification">push notification</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://codegatha.in/tags/c-sharp">c sharp</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://codegatha.in/tags/pushsharp">PushSharp</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Push notification is like a message that hits the users device.Its a modern way of engaging users in the app.Each app can have their own push notification enabled.</p>
+
+<p>This article is going to cover how we can send a push notification to your mobile using a C# code.</p>
+
+<p>The core things we need to send is
+<ul>
+<li>Token generated from the device which we want to send push notification to</li>
+<li>Type of the device (Android,IOS,Windows)</li>
+</ul></p>
+
+<h3 id="how-apps-work-generally">How apps work generally?</h3>
+
+<p>Generally you have a database server and then you have the API’s.The mobile app communicates with the API and the API’s communicate with the database and send information to your mobile app and vice versa.
+So whenever we install or login to an app the app calls the API and from the API we save the token associated with the device and device type.Whenever we want to send any notification we fetch the token and send it to GCM(Google Cloud Messenger).GCM then takes care of sending it to all the devices that have your app installed.</p>
+
+<p>This was a bit of information regarding the background.Now moving on to the practical implementation.</p>
+
+<h3 id="what-we-need">What we need?</h3>
+
+<p>I was in the same situation looking for some solution and I came across a very good library called <a href="https://github.com/Redth/PushSharp">PushSharp</a>.</p>
+
+<p>Install <a href="https://www.nuget.org/packages/PushSharp/">PushSharp</a> from nuget.</p>
+
+<p>After installing PushSharp add the following line of code.</p>
+
+<script src="https://gist.github.com/srimans/5c6f9ca75779cfcac3cf7e5150bdc933.js"></script>
+
+<p>So that’s it.</p>
+
+<h3 id="key-notes-about-the-code">Key notes about the code</h3>
+
+<p><ul>
+<li>
+<b>senderId</b> and the <b>authorizationToken</b> can be found when you register the app with the GCM.</li>
+<li><b>androidDeviceTokens</b> is the list of tokens or we can say the list of devices we have.These are the tokens that we have saved on server side while install or login for an app.The app calls the API to save the token into the database server.</li>
+<li>In android maximum of 1000 tokens can be sent.So we have to send it in batches.</li>
+<li><b>androidNotificationData</b> is the JSON we create to send the data back to the mobile device like the heading and description for a notification.</li></p>
+
+<p>Thank you for reading this post.Comments and suggestions is really appreciated 🙂</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://codegatha.in/post/how-to-integrate-ccavenue-payment-gateway-in-asp-net-mvc/">How to integrate CcAvenue payment gateway in ASP.NET MVC ?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://codegatha.in/post/how-to-integrate-ccavenue-payment-gateway-in-asp-net-mvc/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = url;
+this.page.identifier = url;
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://codegatha.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://codegatha.in/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-112790413-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

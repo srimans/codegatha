@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Amazon S3 on Codegatha</title>
+    <link>http://codegatha.in/tags/amazon-s3/</link>
+    <description>Recent content in Amazon S3 on Codegatha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 27 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codegatha.in/tags/amazon-s3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Upload File to Amazon S3 Bucket?</title>
+      <link>http://codegatha.in/post/how-to-upload-file-to-amazon-s3-bucket-using-csharp-code/</link>
+      <pubDate>Sat, 27 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-upload-file-to-amazon-s3-bucket-using-csharp-code/</guid>
+      <description>Introduction S3 stands for Simple Storage Service. It is one of the many services provided by Amazon. This post is all from my experience and what I have learnt during my short professional career. If you are talking of Amazon storage services then it is a very big and unending topic to write on but here I will take example of a simple file to upload into the bucket. Not only uploading but is very important to write the code in an effective way such that it is easy to understand and make subsequent changes easily.</description>
+    </item>
+    
+  </channel>
+</rss>

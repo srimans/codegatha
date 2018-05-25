@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on Codegatha</title>
+    <link>http://codegatha.in/tags/tips/</link>
+    <description>Recent content in Tips on Codegatha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codegatha.in/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cracking Tech Interviews/Landing In A Job</title>
+      <link>http://codegatha.in/post/how-to-crack-tech-interviews-and-land-in-a-job/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-crack-tech-interviews-and-land-in-a-job/</guid>
+      <description>This post is all about the tips and tricks about cracking tech interviews. This is not at all a technical post. Nothing technical here but I myself have been in the situation where I was forced to look for jobs due to some unwanted situations and there I learned how to get a job. This post is meant for all who are looking to crack interviews and hence get a job.</description>
+    </item>
+    
+    <item>
+      <title>How to Write Good Code/Be a better programmer?</title>
+      <link>http://codegatha.in/post/how-to-write-good-code-and-be-a-better-programmer/</link>
+      <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-write-good-code-and-be-a-better-programmer/</guid>
+      <description>Introduction This post is all from my experience and what I have learnt during my short professional career. Of course this is a very big topic and unending topic to write on but as a coder/developer/programmer it is very important to write the code in an effective way such that it is easy to understand and make subsequent changes easily.I will give you few tips which will certainly help you in writing code in a better way.</description>
+    </item>
+    
+  </channel>
+</rss>

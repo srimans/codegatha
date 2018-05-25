@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Push Notification on Codegatha</title>
+    <link>http://codegatha.in/tags/push-notification/</link>
+    <description>Recent content in Push Notification on Codegatha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 15 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codegatha.in/tags/push-notification/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to send push notification to your android device using C# code?</title>
+      <link>http://codegatha.in/post/how-to-send-push-notification-to-your-android-device-using-c-sharp-code/</link>
+      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-send-push-notification-to-your-android-device-using-c-sharp-code/</guid>
+      <description>Introduction Push notification is like a message that hits the users device.Its a modern way of engaging users in the app.Each app can have their own push notification enabled.
+This article is going to cover how we can send a push notification to your mobile using a C# code.
+The core things we need to send is  Token generated from the device which we want to send push notification to Type of the device (Android,IOS,Windows)</description>
+    </item>
+    
+  </channel>
+</rss>

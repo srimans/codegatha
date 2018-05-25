@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.39" />
+
+  <title>How to Upload File to Amazon S3 Bucket? &middot; Codegatha</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://codegatha.in/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://codegatha.in/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://codegatha.in/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://codegatha.in/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://codegatha.in/">Codegatha</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/topics/"><i class='fa fa-folder fa-fw'></i>Topics</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/srimans" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/4008626" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>How to Upload File to Amazon S3 Bucket?</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>27 Jan 2018</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://codegatha.in/tags/amazon-s3">Amazon S3</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://codegatha.in/tags/cloud-storage">Cloud Storage</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://codegatha.in/tags/c-sharp">c sharp</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h2 id="introduction">Introduction</h2>
+
+<p>S3 stands for <b>Simple Storage Service</b>. It is one of the many services provided by Amazon.
+This post is all from my experience and what I have learnt during my short professional career.
+If you are talking of Amazon storage services then it is a very big and unending topic to write on but here I will take example of a simple file to upload into the bucket.
+Not only uploading but is very important to write the code in an effective way such that it is easy to understand and make subsequent changes easily.
+I  will give you few tips which will certainly help you in writing code in a better way.</p>
+
+<p>So here it goes……..</p>
+
+<p>Although the implementation is simple but I will make sure a good architecture is maintained so that our   <b>DRY</b>(<b>D</b>on&rsquo;t <b>R</b>epeat <b>Y</b>ourself) is still kept intact.</p>
+
+<p>When we are doing real life projects there are many instances where uploading a content to any service be it a cloud service,or file system we tend to violate DRY principle. Somehow we end up using hard coded strings in our views(.cshtml) files. One simple change in the requirement means we have to change everywhere and then we test. Developer might have forgotten to change one file due to which it again comes back to him and then change again,test again and a lot of time goes in this. All the time wasted can be saved if you do not repeat yourself. One change one shot and boom… Your feature change is published in seconds…. Keep in mind,always try not to repeat yourself while writing code.</p>
+
+<p>S3 stands for Simple Storage Service. As the post heading goes it is provided by Amazon.You can take help of buckets to store your photos,files and documents. Buckets are like containers. Those who are familiar with Microsoft Azure, it&rsquo;s like azure container service.You can read more about Amazon s3 bucket from <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html">here</a>.</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Very first step in each and every project is creating a good architecture. A good architecture always saves you a lot of time in development. It also increases speed of delivery of your features for testing. First we will create an interface.</p>
+
+<script src="https://gist.github.com/srimans/e3741e546f5165ef665408c7c3a585f7.js"></script>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Add keys to web.config file. Keys should be declared there in Web.Config files as they might change depending upon the test environment and production environment.</p>
+
+<script src="https://gist.github.com/srimans/d044ecbd1e4a1267aec62a4f474ae3b4.js"></script>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>Add the dll/reference using the nuget package from <a href="https://www.nuget.org/packages/AWSSDK/2.3.55.2">here</a> . Or run the following command in package manager console.</p>
+
+<h3 id="install-package-awssdk-version-2-3-55-2">Install-Package AWSSDK -Version 2.3.55.2</h3>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Create a class that will inherit this interface.Lets name it ContentService.</p>
+
+<script src="https://gist.github.com/srimans/01c095e9ccb48d48a170ab8e391e8609.js"></script>
+
+<p><b>CASE:</b> Suppose we want to save history of resumes uploaded by a user then the structure of our file uploaded on s3 can be</p>
+
+<pre><code>amazon-base-url/bucket-name/content-type/content-folder-name/file-name
+</code></pre>
+
+<p><b>FileName</b> can be timestamp or a GUID.</p>
+
+<p><b>Stream</b> is input stream found in System.IO namespace.</p>
+
+<p><b>Content Folder</b> Name can be unique-ids of your entities(business objects)</p>
+
+<p><b>ContentType</b> is an enum/static string class file that will contain the folder name. Depending on business requirement you might have different type of contents. For ex: user documents might be one content type, images of products can be another one.</p>
+
+<p>If you are using Dependency Injection</p>
+
+<pre><code>DO NOT FORGET TO REGISTER DEPENDENCIES FOR THE ICONTENT SERVICE
+</code></pre>
+
+<p>IMPORTANT
+* In real life scenarios when we are creating an application we tend to hardcode string files in .cshtml files while getting content full url. We need not have to hardcode strings in .cshtml files.
+* Only thing we need is an urlHelper and htmlHelper classes that will take care of repetitions in code.To learn about Html helpers and Url Helpers click here.
+* Business logics/repository will do the validations for checking which kind of file we upload(.jpg/.png/.pdf) and what should be the size of the file. Then it can call the contentService to use it for uploading and getting content.</p>
+
+<p>You can add more methods to contentService like deleting content according to your requirements.</p>
+
+<p>Hope you learnt something. Keep following for more posts :)</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://codegatha.in/post/not-knowing-our-infrastructure-cost-us-big-time/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://codegatha.in/post/not-knowing-our-infrastructure-cost-us-big-time/">We destroyed it!!!Not knowing our infrastructure cost us BIG TIME!!!</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://codegatha.in/post/how-to-use-extension-methods-in-c-sharp/">Extension Methods</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://codegatha.in/post/how-to-use-extension-methods-in-c-sharp/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = url;
+this.page.identifier = url;
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://codegatha.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://codegatha.in/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-112790413-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

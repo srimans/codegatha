@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.39" />
+
+  <title>Extension Methods &middot; Codegatha</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://codegatha.in/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://codegatha.in/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://codegatha.in/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://codegatha.in/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://codegatha.in/">Codegatha</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/topics/"><i class='fa fa-folder fa-fw'></i>Topics</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/srimans" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/4008626" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Extension Methods</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>10 Mar 2018</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://codegatha.in/topics/c-sharp-concepts">C Sharp Concepts</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://codegatha.in/tags/c-sharp">c sharp</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This post is about how we can take the advantage of Extension methods that is available in C#. This post will cover everything about C# extension methods. This is one of the posts under knowing C# better. In this post I will explain how we can create extension methods and how extension methods are used in real life situations.</p>
+
+<p>Imagine there is a class file and some methods in the file which does some task. Today I have a requirement that I want to add some more power to the class. In order to do that I have to change the source code of the class. Let’s say now I have packaged the class into a .dll and I have given it to my customers/clients to use it. They ask for a change. Then I have to update the code and then republish the .dll and then the cycle goes on.</p>
+
+<p>Now let’s say we have some thousands of clients. To manage each and every request it is very difficult. Hence the use of extension methods comes into picture.</p>
+
+<h2 id="what-are-extension-methods">What are Extension Methods?</h2>
+
+<p>Extension methods are simply methods or functions. These methods gives us the capability to add new methods to an existing class or a type without changing its source code or inheriting from it.</p>
+
+<p>They come to existence when the class that created them is in the scope.</p>
+
+<h4 id="example">Example</h4>
+
+<p><img src="http://codegatha.in/img/extensionmethod3.jpg" alt="ExtensionMethod example" /></p>
+
+<p>The methods shown in the visual studio intelisense showing an arrow pointing down are all extension methods.</p>
+
+<h2 id="how-to-create-them">How to create them?</h2>
+
+<ul>
+<li>Create a static class.</li>
+<li>Create a static method inside the static class.</li>
+<li>First parameter of the method should be of the same type you are trying to extend.</li>
+</ul>
+
+<script src="https://gist.github.com/srimans/e84e34067e1637eb0cfe68f8cc1751ea.js"></script>
+
+<p>In the above example I am trying to add existing functionality to the string type. So I have created a static class called StringExtensions that has a static method GetFirstNWords().</p>
+
+<p>To use this method GetFiirstNWords(), we can simply create a string variable and then use this method.</p>
+
+<p>This doesn’t even require instantiating the class. The syntax can the following :</p>
+
+<script src="https://gist.github.com/srimans/30d6f3a7b6205475f2e666d542f7a621.js"></script>
+
+<p>In the above example we have created an extension for string type. We can get first N words of a any string that is within the scope of the extension method.</p>
+
+<h2 id="where-not-to-use">Where not to use?</h2>
+
+<h3 id="on-static-class">On static class</h3>
+
+<p>You can’t add static methods to a type. You can only add (pseudo-)instance methods to an instance of a type.</p>
+
+<p>The point of the this modifier is to tell the C# compiler to pass the instance on the left-side of the . as the first parameter of the static/extension method.</p>
+
+<p>In the case of adding static methods to a type, there is no instance to pass for the first parameter as single instance is created for the static method.</p>
+
+<p>Extension method definitions require an instance of the type you’re extending. It is because an extension method is used to extend an instance of an object. If they didn’t do that they would just be regular static methods.</p>
+
+<h2 id="points-to-remember">Points to remember</h2>
+
+<ol>
+<li>We can generally use it on sealed classes as we cannot inherit from the sealed class.</li>
+
+<li><p>An extension method with the same name and signature as an instance method will not be called.
+Example: Let’s say we have a GetNWords() in the base System.String class. We would not  have been able to use our GetNWords() in extension method. GetNWords() in the System.String class will be called every time you try to invoke it.</p></li>
+
+<li><p>Extension methods cannot be used to override existing methods. They are just there to add more power to existing class.</p></li>
+</ol>
+
+<h2 id="where-i-used-it">Where I used it?</h2>
+
+<ul>
+<li><a href="http://codegatha.in/post/how-to-use-helper-methods-in-asp-net-mvc/" target="_blank">HtmlExtensions</a></li>
+<li><a href="http://codegatha.in/post/how-to-use-helper-methods-in-asp-net-mvc/" target="_blank">UrlExtensions</a></li>
+<li>Extending the queries from the database and converting them to custom view objects.</li>
+</ul>
+
+<p>Thank you 🙂</p>
+
+<p>I am attaching the source code <a href="https://github.com/srimans/BlogExamples" target="_blank">here</a> . Keep following me for more updates.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://codegatha.in/post/how-to-upload-file-to-amazon-s3-bucket-using-csharp-code/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://codegatha.in/post/how-to-upload-file-to-amazon-s3-bucket-using-csharp-code/">How to Upload File to Amazon S3 Bucket?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://codegatha.in/post/how-to-use-helper-methods-in-asp-net-mvc/">How to use Helper Methods in .NET MVC?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://codegatha.in/post/how-to-use-helper-methods-in-asp-net-mvc/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = url;
+this.page.identifier = url;
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://codegatha.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://codegatha.in/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-112790413-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

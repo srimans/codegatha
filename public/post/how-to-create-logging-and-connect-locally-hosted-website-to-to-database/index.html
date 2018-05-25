@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.39" />
+
+  <title>How to create logging and connect locally hosted website to database? &middot; Codegatha</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://codegatha.in/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://codegatha.in/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://codegatha.in/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://codegatha.in/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://codegatha.in/">Codegatha</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/topics/"><i class='fa fa-folder fa-fw'></i>Topics</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://codegatha.in/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/srimans" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/4008626" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>How to create logging and connect locally hosted website to database?</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>02 Feb 2017</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://codegatha.in/tags/iis">IIS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://codegatha.in/tags/hosting">Hosting</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<p>This post is a continuation of my previous <a href="http://codegatha.in/post/how-to-host-a-website-locally-on-iis/" target="_blank">post</a>.Here we will see how we can create a login and connect your web application to the database.</p>
+
+<p>In real life scenarios when we are hosting the website on the IIS and we also have the application pointing to a database then we need to have proper logging and proper permissions set up.If not then we will get a yellow screen saying&hellip;</p>
+
+<pre><code>Cannot open database database-name requested by the login. 
+The login failed.Login failed for user IIS APPPOOL\App-pool-name.
+</code></pre>
+
+<p><b>App-pool-name</b> is generally the name under which you have hosted the website on IIS.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+<li>Already hosted website on IIS.</li>
+<li>Already created database lets say Test.</li>
+</ul>
+
+<h2 id="steps">Steps</h2>
+
+<ul>
+<li>Expand the security tab and then right click on Logins.</li>
+</ul>
+
+<p><img src="http://codegatha.in/img/12.jpg" alt="Login" /></p>
+
+<ul>
+<li>Select the new Login option.</li>
+</ul>
+
+<p><img src="http://codegatha.in/img/22.jpg" alt="NewLogin" /></p>
+
+<ul>
+<li>In general tab put the login name as IIS APPPOOL\app-pool-name.In my case its test.in.So login name is <b> IIS APPPOOL\test.in </b>.</li>
+</ul>
+
+<p><img src="http://codegatha.in/img/32.jpg" alt="LoginName" /></p>
+
+<ul>
+<li>Click on User Mapping tab on the left and select master and test.Below on the database role membership for <b>master</b> select the <b>db_owner</b>.Click <b>Ok</b>.</li>
+</ul>
+
+<p><img src="http://codegatha.in/img/41.jpg" alt="User Mapping" /></p>
+
+<ul>
+<li>Point your web application to the Test database.</li>
+</ul>
+
+<p><img src="http://codegatha.in/img/5.jpg" alt="Point Application To Test Database" /></p>
+
+<p>Yeah!! Now you have hosted website locally and connected to database as well.</p>
+
+<p>Thanks for reading this post. Keep following me for more updates.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://codegatha.in/post/how-to-host-a-website-locally-on-iis/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://codegatha.in/post/how-to-host-a-website-locally-on-iis/">How to host a website on local IIS?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://codegatha.in/post/how-to-set-up-miniprofiler-with-asp-net-mvc-entityframework-6-code-first/">How to Set up Miniprofiler with ASP .Net MVC EntityFramework 6 CodeFirst??</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://codegatha.in/post/how-to-set-up-miniprofiler-with-asp-net-mvc-entityframework-6-code-first/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = url;
+this.page.identifier = url;
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://codegatha.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://codegatha.in/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-112790413-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

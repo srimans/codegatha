@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linq on Codegatha</title>
+    <link>http://codegatha.in/tags/linq/</link>
+    <description>Recent content in Linq on Codegatha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codegatha.in/tags/linq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LINQ</title>
+      <link>http://codegatha.in/post/using-linq-in-c-sharp/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/using-linq-in-c-sharp/</guid>
+      <description>Introduction LINQ stands for Language Integrated Query. LINQ helps us in querying objects. Introduction of LINQ is a great advantage for developers because as a developer if you have ORM(Object Relation Mapping) framework like Entity Framework then you do not need to write SQL queries. Linq can help you query your business objects as well.
+LINQ helps to query
+ Objects in memory (Collections) Databases (Entities) XML ADO .NET (DataSets)  Why Linq?</description>
+    </item>
+    
+  </channel>
+</rss>

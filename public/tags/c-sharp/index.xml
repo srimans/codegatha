@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C Sharp on Codegatha</title>
+    <link>http://codegatha.in/tags/c-sharp/</link>
+    <description>Recent content in C Sharp on Codegatha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codegatha.in/tags/c-sharp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LINQ</title>
+      <link>http://codegatha.in/post/using-linq-in-c-sharp/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/using-linq-in-c-sharp/</guid>
+      <description>Introduction LINQ stands for Language Integrated Query. LINQ helps us in querying objects. Introduction of LINQ is a great advantage for developers because as a developer if you have ORM(Object Relation Mapping) framework like Entity Framework then you do not need to write SQL queries. Linq can help you query your business objects as well.
+LINQ helps to query
+ Objects in memory (Collections) Databases (Entities) XML ADO .NET (DataSets)  Why Linq?</description>
+    </item>
+    
+    <item>
+      <title>How to use Helper Methods in .NET MVC?</title>
+      <link>http://codegatha.in/post/how-to-use-helper-methods-in-asp-net-mvc/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-use-helper-methods-in-asp-net-mvc/</guid>
+      <description>Introduction Helper Methods are nothing but simply extension methods. If you are wondering what actually an extension method is then check this. This post will talk about different types of helpers -:
+ HtmlHelpers UrlHelpers  Implementing both of them is same like implementing extension methods. Before implementing them it is important to know why we will implement them. Things can also work without them also.
+Why Implement Helper Methods?</description>
+    </item>
+    
+    <item>
+      <title>Extension Methods</title>
+      <link>http://codegatha.in/post/how-to-use-extension-methods-in-c-sharp/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-use-extension-methods-in-c-sharp/</guid>
+      <description>Introduction This post is about how we can take the advantage of Extension methods that is available in C#. This post will cover everything about C# extension methods. This is one of the posts under knowing C# better. In this post I will explain how we can create extension methods and how extension methods are used in real life situations.
+Imagine there is a class file and some methods in the file which does some task.</description>
+    </item>
+    
+    <item>
+      <title>How to Upload File to Amazon S3 Bucket?</title>
+      <link>http://codegatha.in/post/how-to-upload-file-to-amazon-s3-bucket-using-csharp-code/</link>
+      <pubDate>Sat, 27 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-upload-file-to-amazon-s3-bucket-using-csharp-code/</guid>
+      <description>Introduction S3 stands for Simple Storage Service. It is one of the many services provided by Amazon. This post is all from my experience and what I have learnt during my short professional career. If you are talking of Amazon storage services then it is a very big and unending topic to write on but here I will take example of a simple file to upload into the bucket. Not only uploading but is very important to write the code in an effective way such that it is easy to understand and make subsequent changes easily.</description>
+    </item>
+    
+    <item>
+      <title>How to Set up Miniprofiler with ASP .Net MVC EntityFramework 6 CodeFirst??</title>
+      <link>http://codegatha.in/post/how-to-set-up-miniprofiler-with-asp-net-mvc-entityframework-6-code-first/</link>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-set-up-miniprofiler-with-asp-net-mvc-entityframework-6-code-first/</guid>
+      <description>What is a Profiler? Profiling helps in gathering information about an executing application, i.e how much time is spend where which in turn helps allowing to determine those improvements that are required in the application. Anything that helps us do profiling is called as a profiler.
+Read more about why profilers and good .NET profilers.
+One of them is Miniprofiler
+MiniProfiler Miniprofiler is developed by the famous team at StackOverflow.</description>
+    </item>
+    
+    <item>
+      <title>String conversions in C#</title>
+      <link>http://codegatha.in/post/convert-string-to-enum-to-datetime/</link>
+      <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/convert-string-to-enum-to-datetime/</guid>
+      <description> Introduction This post will contain small code snippets that will convert a string to different types like a datetime,enum etc&amp;hellip;
+string to enum The below snippet will convert string to an enum value.
+ string to DateTimeOffset The below snippet will convert string to DateTimeOffset object. If the string cannot be converted then return current DateTimeOffset.
+ </description>
+    </item>
+    
+    <item>
+      <title>How to integrate CcAvenue payment gateway in ASP.NET MVC ?</title>
+      <link>http://codegatha.in/post/how-to-integrate-ccavenue-payment-gateway-in-asp-net-mvc/</link>
+      <pubDate>Sat, 26 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-integrate-ccavenue-payment-gateway-in-asp-net-mvc/</guid>
+      <description>Prerequisites You should have a ccavenue account.
+Problem  The second step is the problem I faced while integrating the ccavenue page.I found out that most of the people were finding the same.As we are developing something we need to first test it in development environment.  Inside your ccavenue account they have already given you the access code,merchant Id and access key for a url.But those credentials will only work if you are redirecting to the ccavenue page from that url only.</description>
+    </item>
+    
+    <item>
+      <title>How to send push notification to your android device using C# code?</title>
+      <link>http://codegatha.in/post/how-to-send-push-notification-to-your-android-device-using-c-sharp-code/</link>
+      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-send-push-notification-to-your-android-device-using-c-sharp-code/</guid>
+      <description>Introduction Push notification is like a message that hits the users device.Its a modern way of engaging users in the app.Each app can have their own push notification enabled.
+This article is going to cover how we can send a push notification to your mobile using a C# code.
+The core things we need to send is  Token generated from the device which we want to send push notification to Type of the device (Android,IOS,Windows)</description>
+    </item>
+    
+  </channel>
+</rss>

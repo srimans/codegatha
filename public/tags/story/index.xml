@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Story on Codegatha</title>
+    <link>http://codegatha.in/tags/story/</link>
+    <description>Recent content in Story on Codegatha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 11 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codegatha.in/tags/story/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>We destroyed it!!!Not knowing our infrastructure cost us BIG TIME!!!</title>
+      <link>http://codegatha.in/post/not-knowing-our-infrastructure-cost-us-big-time/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/not-knowing-our-infrastructure-cost-us-big-time/</guid>
+      <description>Introduction Of late I have not been writing posts that are related to coding. Of late things are mostly related to experiences. But keep calm. More posts related to coding are coming soon. Keep following for more updates as they say 😉
+We destroyed it……Not knowing our infrastructure cost us BIG TIME!!  This line goes way back to the late 2016’s and the early 2017’s when I was working with a startup as a software developer.</description>
+    </item>
+    
+  </channel>
+</rss>

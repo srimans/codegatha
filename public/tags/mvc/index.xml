@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mvc on Codegatha</title>
+    <link>http://codegatha.in/tags/mvc/</link>
+    <description>Recent content in Mvc on Codegatha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 02 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codegatha.in/tags/mvc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to use Helper Methods in .NET MVC?</title>
+      <link>http://codegatha.in/post/how-to-use-helper-methods-in-asp-net-mvc/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-use-helper-methods-in-asp-net-mvc/</guid>
+      <description>Introduction Helper Methods are nothing but simply extension methods. If you are wondering what actually an extension method is then check this. This post will talk about different types of helpers -:
+ HtmlHelpers UrlHelpers  Implementing both of them is same like implementing extension methods. Before implementing them it is important to know why we will implement them. Things can also work without them also.
+Why Implement Helper Methods?</description>
+    </item>
+    
+    <item>
+      <title>How to integrate CcAvenue payment gateway in ASP.NET MVC ?</title>
+      <link>http://codegatha.in/post/how-to-integrate-ccavenue-payment-gateway-in-asp-net-mvc/</link>
+      <pubDate>Sat, 26 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://codegatha.in/post/how-to-integrate-ccavenue-payment-gateway-in-asp-net-mvc/</guid>
+      <description>Prerequisites You should have a ccavenue account.
+Problem  The second step is the problem I faced while integrating the ccavenue page.I found out that most of the people were finding the same.As we are developing something we need to first test it in development environment.  Inside your ccavenue account they have already given you the access code,merchant Id and access key for a url.But those credentials will only work if you are redirecting to the ccavenue page from that url only.</description>
+    </item>
+    
+  </channel>
+</rss>
