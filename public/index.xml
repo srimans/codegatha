@@ -152,7 +152,9 @@ The core things we need to send is  Token generated from the device which we wan
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>http://codegatha.in/about/</guid>
-      <description></description>
+      <description>I am a full stack web developer. I will share the knowledge I gain in my career through this blog.
+I am very happy that I set up this blog. What makes me more happier is it literally took me some few minues to set up this blog.
+It is built using hugo. It is a framework for generating static websites.Click here to know more.</description>
     </item>
     
     <item>
@@ -161,7 +163,7 @@ The core things we need to send is  Token generated from the device which we wan
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>http://codegatha.in/contact/</guid>
-      <description> First Name  Last Name  Email   Your Message   Send   </description>
+      <description>Mail: codegatha@gmail.com</description>
     </item>
     
   </channel>
