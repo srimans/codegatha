@@ -1,4 +1,4 @@
-baseURL = "http://codegatha.in"
+baseURL = "https://codegatha.in"
 languageCode = "en-us"
 title = "Codegatha"
 theme = "blackburn"
